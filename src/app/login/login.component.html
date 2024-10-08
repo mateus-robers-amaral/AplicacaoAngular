@@ -1,13 +1,28 @@
-<img src="assets/images/bolsa-login.png" alt="Mochila verde moderna">
-<div class="imagem-direita">
-    <img src="assets/images/login.png" alt="Jovem rapaz estudando com símbolos de matérias ao redor">
-</div>
-
-<div class="mb-3">
-    <label for="formGroupExampleInput" class="form-label">E-mail</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu e-mail">
-  </div>
-  <div class="mb-3">
-    <label for="formGroupExampleInput2" class="form-label">Senha</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite sua senha">
-  </div>
+<body>
+    <div class="conteudo-login">
+      <div class="secao-imagem">
+        <img class="imagem-esquerda" src="/assets/images/login.png" alt="Estudante lendo um livro com elementos científicos ao redor">
+      </div>
+      <div class="direita">
+        <form class="form-login">
+          <img class="logo" src="/assets/images/bolsa-login.png" alt="Logo do Guia do Mochileiro Fatecano">
+          <h2>Guia do Mochileiro<br>Fatecano</h2>
+          <div class="grupo-formulario">
+            <p>E-mail</p>
+            <input placeholder="Digite seu e-mail">
+          </div>
+          <div class="grupo-formulario grupo-senha">
+            <p>Senha</p>
+            <span class="icone"><i class="fas fa-lock"></i></span>
+            <input type="password" placeholder="Digite sua senha">
+            <img class="icone-cadeado" src="assets/images/cadeado.png" alt="Cadeado de senha">
+          </div>
+          <button type="submit">Entrar</button>
+          <div class="link-cadastro">
+            <span>Ainda não possui conta? </span>
+            <a href="/register/register.html">Cadastrar-se</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
