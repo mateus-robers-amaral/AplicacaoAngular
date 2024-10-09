@@ -1,29 +1,81 @@
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <img src="assets/images/bolsa-home.png" alt="Logo do Guia do Mochileiro Fatecano">
-        <a class="navbar-brand" href="#">Guia do Mochileiro Fatecano</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Notificações</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Matérias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Valores</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sair</a>
-                </li>
-            </ul>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo e Título -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/bolsa-home.png" alt="Logo do Guia do Mochileiro Fatecano" width="40">
+                Guia do Mochileiro Fatecano
+            </a>
+            <!-- Botão Toggle para dispositivos móveis -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links de Navegação -->
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Notificações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Matérias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Valores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container principal -->
+    <div class="container my-5">
+        <h2 class="mb-4">Termos</h2>
+        <p>Qual termo gostaria de acessar hoje?</p>
+        <button class="btn add-term-button">+ Adicionar turma</button>
+        
+        <!-- Seção de Termos -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+            <div class="col">
+                <div class="card text-center bg-light" style="background-color: #DFFFD8;">
+                    <div class="card-body">
+                        <h5 class="card-title">1° Termo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center bg-light" style="background-color: #F0EAD6;">
+                    <div class="card-body">
+                        <h5 class="card-title">2° Termo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center bg-light" style="background-color: #B3FF99;">
+                    <div class="card-body">
+                        <h5 class="card-title">3° Termo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center bg-light" style="background-color: #DFFFD8;">
+                    <div class="card-body">
+                        <h5 class="card-title">4° Termo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center bg-light" style="background-color: #F0F9A6;">
+                    <div class="card-body">
+                        <h5 class="card-title">5° Termo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center bg-light" style="background-color: #99FFCC;">
+                    <div class="card-body">
+                        <h5 class="card-title">6° Termo</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
