@@ -1,24 +1,47 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <!-- Logo e Título -->
+        <div class="container-fluid" style="padding: 0 120px;">
             <a class="navbar-brand" href="#">
                 <img src="assets/images/bolsa-home.png" alt="Logo do Guia do Mochileiro Fatecano" width="40">
                 Guia do Mochileiro Fatecano
             </a>
-            <!-- Botão Toggle para dispositivos móveis -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" style="color: #fff;">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: white;"></span>
             </button>
-            <!-- Links de Navegação -->
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Notificações</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Matérias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Valores</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+                    <li class="nav-item">
+                        <a routerLink="/home">
+                            <img src="./assets/images/home.png" alt="">
+                        </a>
+                        <a class="nav-link active" routerLink="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/home">
+                            <img src="./assets/images/bell.png" alt="">
+                        </a>
+                        <a class="nav-link" routerLink="/home">Notificações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/home">
+                            <img src="./assets/images/book.png" alt="">
+                        </a>
+                        <a class="nav-link" routerLink="/home">Matérias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/home">
+                            <img src="./assets/images/star.png" alt="">
+                        </a>
+                        <a class="nav-link" routerLink="/home">Valores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/">
+                            <img src="./assets/images/log-in.png" alt="">
+                        </a>
+                        <a class="nav-link" routerLink="/">Sair</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -26,49 +49,53 @@
 
     <!-- Container principal -->
     <div class="container my-5">
-        <h2 class="mb-4">Termos</h2>
-        <p>Qual termo gostaria de acessar hoje?</p>
-        <button class="btn add-term-button">+ Adicionar turma</button>
-        
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h2 class="mb-2">Termos</h2>
+                <p>Qual termo gostaria de acessar hoje?</p>
+            </div>
+            <button class="btn add-term-button">+ Adicionar turma</button>
+        </div>
+
         <!-- Seção de Termos -->
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-            <div class="col">
-                <div class="card text-center bg-light" style="background-color: #DFFFD8;">
+        <div class="row justify-content-between mt-3 mb-10">
+            <div class="col-12 mb-3">
+                <div class="card text-center" style="background-color: #E2F4C5;">
                     <div class="card-body">
                         <h5 class="card-title">1° Termo</h5>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card text-center bg-light" style="background-color: #F0EAD6;">
+            <div class="col-12 mb-3">
+                <div class="card text-center" style="background-color: #EEE7DA;">
                     <div class="card-body">
                         <h5 class="card-title">2° Termo</h5>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card text-center bg-light" style="background-color: #B3FF99;">
+            <div class="col-12 mb-3">
+                <div class="card text-center" style="background-color: #A5DD9B;">
                     <div class="card-body">
                         <h5 class="card-title">3° Termo</h5>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card text-center bg-light" style="background-color: #DFFFD8;">
+            <div class="col-12 mb-3">
+                <div class="card text-center" style="background-color: #C5EBAA;">
                     <div class="card-body">
                         <h5 class="card-title">4° Termo</h5>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card text-center bg-light" style="background-color: #F0F9A6;">
+            <div class="col-12 mb-3">
+                <div class="card text-center" style="background-color: #F0F9A6;">
                     <div class="card-body">
                         <h5 class="card-title">5° Termo</h5>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card text-center bg-light" style="background-color: #99FFCC;">
+            <div class="col-12 mb-3">
+                <div class="card text-center" style="background-color: #AFC8AD;">
                     <div class="card-body">
                         <h5 class="card-title">6° Termo</h5>
                     </div>
@@ -76,4 +103,5 @@
             </div>
         </div>
     </div>
+
 </body>
